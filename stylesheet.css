@@ -1,0 +1,72 @@
+div {
+    height: 200px;
+    width: 50%;
+    background-color: #DEB887;
+}
+
+div#trash {height: 60px;
+    width: 50%;
+    background-color: #DEB887;}
+
+#containment-wrapper { 
+    width: 50%; 
+    height:500px; 
+    border:2px solid brown;
+    padding: 0px; 
+ }
+
+#containment-wrapper2 { 
+ 	width: 50%; 
+ 	height:100px; 
+ 	border:2px 
+ 	solid black; 
+ 	padding: 0px; 
+ }
+
+ #container {
+     width:200px;
+     height:200px;
+     background:yellow;
+     margin:25px;
+}
+
+input[type=text] {
+	text-align:center;
+	font-size: 16px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: #DEB887;
+    color: black;
+    position: relative; 
+    top: -70px; 
+    left: 9px;
+    width: 80%; 
+    max-width: 100%;
+}
+
+.draggable  { 
+    width: 90px; 
+    height: 90px; 
+    padding: 0; 
+    float: left; margin: 0 0px 0px 0;
+}
+
+#ui-droppable { 
+    width: 90px;
+    height: 90px;
+    padding: 0; 
+    float: left; margin: 0 0px 0px 0;
+}
+
+.icons {
+    width: 90px;
+    height: 90px;
+}
+
+.trashbin {
+    width: 60px;
+    height: 60px;
+}
+
+
