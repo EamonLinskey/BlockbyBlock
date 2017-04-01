@@ -1,3 +1,5 @@
+
+
 .alignLeft {
 	float:left;
 }
@@ -22,7 +24,6 @@ body {
 	font-family: Lucida Sans Unicode;
 }
 
-
 #line {
 	size:3;
 	color:black;
@@ -34,26 +35,4 @@ body {
   	padding-bottom: 8px;
   	border-top: 1px solid;
 	border-bottom: 1px solid;
-
-.tab-content {
-	background-color: #ffffff;
-	border-top: 1px solid #d3d3d3;
-}
-
-.tab-pane {
-	padding-top: 0px;
-	padding-left: 15px;
-	padding-right: 15px;
-	padding-bottom: 25px;
-}
-
-.col-xs-6 {
-	padding-left: 15px;
-	padding-right: 15px;
-}
-
-.boxes {
-	padding-left: 5px;
-	padding-right: 5px;
-	border: 2px solid;
 }
