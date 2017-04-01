@@ -21,4 +21,18 @@
 
 body {
 	background-color: #e6e6e6;
+	font-family: Lucida Sans Unicode;
+}
+
+#line {
+	size:3;
+	color:black;
+	width:100%;
+}
+
+.homeShowBoxes {
+	padding-top: 8px;
+  	padding-bottom: 8px;
+  	border-top: 1px solid;
+	border-bottom: 1px solid;
 }
