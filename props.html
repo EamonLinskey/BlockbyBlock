@@ -5,6 +5,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/i18n/defaults-*.min.js"></script>
     <link rel="stylesheet" href="camille.css">
 </head>
 <body>
@@ -56,16 +59,39 @@
         <div>
             <div class="tab-content">
                 <div id="all" class="tab-pane fade in active">
-                    <h3>All</h3>
+                    <br>
                     <div class="row">
                         <div class="col-xs-6">
                             <div class="boxes">
-                                Text
+                                <h4>Need to Make</h4>
+                                <hr>
+                                <table>
+                                    <tr>
+                                        <td>Book</td>
+                                        <td><input class="form-control numberbox" type="number" value="1"></td>
+                                        <td>
+                                            <select class="selectpicker" data-header="Scenes" multiple>
+                                                <option>I.1</option>
+                                                <option>I.2</option>
+                                                <option>II.1</option>
+                                                <option>II.2</option>
+                                                <option>III.1</option>
+                                                <option>III.2</option>
+                                                <option>IV.1</option>
+                                                <option>IV.2</option>
+                                                <option>IV.3</option>
+                                                <option>IV.4</option>
+                                                <option>V.1</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </table>
                             </div>
                         </div>
                         <div class="col-xs-6">
                             <div class="boxes">
-                                Text
+                                <h4>Ready</h4>
+                                <hr>
                             </div>                        
                         </div>
                     </div>

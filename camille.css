@@ -22,19 +22,6 @@ body {
 	font-family: Lucida Sans Unicode;
 }
 
-
-#line {
-	size:3;
-	color:black;
-	width:100%;
-}
-
-.homeShowBoxes {
-	padding-top: 8px;
-  	padding-bottom: 8px;
-  	border-top: 1px solid;
-	border-bottom: 1px solid;
-
 .tab-content {
 	background-color: #ffffff;
 	border-top: 1px solid #d3d3d3;
@@ -56,4 +43,17 @@ body {
 	padding-left: 5px;
 	padding-right: 5px;
 	border: 2px solid;
+}
+
+hr {
+	border-color: #000000;
+}
+
+.itemlist {
+	list-style: none;
+	padding-left: 10px;
+}
+
+.numberbox {
+	width: 50px;
 }
