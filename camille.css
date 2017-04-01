@@ -55,5 +55,15 @@ hr {
 }
 
 .numberbox {
-	width: 50px;
+	width: 60px;
+	float: right;
+}
+
+/*.scenebox {
+	margin-right: 0px;
+	align: right;
+}*/
+
+.proptable {
+	width: 100%;
 }
