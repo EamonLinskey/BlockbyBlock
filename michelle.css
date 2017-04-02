@@ -35,4 +35,27 @@ body {
   	padding-bottom: 8px;
   	border-top: 1px solid;
 	border-bottom: 1px solid;
+	border-color: #A9A9A9;
 }
+
+.pageTable {
+	border: 1px solid #88888c;
+	border-spacing: 4px;
+	border-collapse: separate;
+}
+
+.pageRow {
+	  border: 1px solid #88888c;
+	  padding: 10px 15px;
+}
+
+.tab-content {
+	background-color: #ffffff;
+	border-top: 1px solid #d3d3d3;
+}
+
+.tab-pane {
+	padding-top: 0px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 25px;
