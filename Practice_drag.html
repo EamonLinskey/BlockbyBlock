@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -42,7 +43,7 @@
   // This function lets us clear icons moved to the trash
   $( function() {
      $('#trash').droppable({
-        over: function(event, ui) {
+        drop: function(event, ui) {
             // This line makes it so we can only delete the clones
             if (ui.draggable.hasClass('canvas-element'))
             ui.draggable.remove();
@@ -53,6 +54,13 @@
  
  
 <h3>Blocking</h3>
+<div class="column"> 
+  <div id="script">
+  <object id="scrip_text" data="A_comedy_of_errors.txt"></object>
+  </div>
+</div>
+
+<div class="column">
 <!-- Container holding the trash bin -->
 <div id="containment-wrapper">
   <div id="trash"><img src="images/trash.png" alt="trash" class="trashbin"></div>
@@ -71,7 +79,9 @@
     <img src="images/house2.png" alt="prop" class="icons">
     <input type="text" id="SetName" name="SetName" value="Set">
   </div>
-  
+</div>
+</div>
+
 
  
  

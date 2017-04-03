@@ -1,26 +1,23 @@
-div {
-    height: 200px;
-    width: 50%;
-    background-color: #DEB887;
-}
 
 div#trash {height: 60px;
-    width: 50%;
+    width: 95%;
     background-color: #DEB887;}
 
 #containment-wrapper { 
-    width: 50%; 
+    width: 95%; 
     height:500px; 
     border:2px solid brown;
     padding: 0px; 
+     background-color: #DEB887;
  }
 
 #containment-wrapper2 { 
- 	width: 50%; 
+ 	width: 95%; 
  	height:100px; 
  	border:2px 
  	solid black; 
  	padding: 0px; 
+    background-color: #DEB887;
  }
 
  #container {
@@ -68,8 +65,22 @@ input[type=text] {
     width: 60px;
     height: 60px;
 }
-<<<<<<< HEAD
 
+.column{
+    float:left;
+    margin:0;
+    width:50%; 
+}
 
-=======
->>>>>>> 1fbe229cc44146d16c5ba3849629daaa9b715be7
+#script{
+    height:607px;
+    width:95%;
+    border:1px solid #ccc;
+    font:16px/26px Georgia, Garamond, Serif;
+    overflow:auto;"
+}
+
+#scrip_text{
+    height:607px;
+    width:100%; 
+}
