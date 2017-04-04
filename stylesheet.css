@@ -33,13 +33,14 @@ input[type=text] {
     margin: 8px 0;
     box-sizing: border-box;
     border: none;
-    background-color: #DEB887;
+    background-color: rgba(222, 184, 135, 0);
     color: black;
     position: relative; 
     top: -70px; 
     left: 9px;
     width: 80%; 
     max-width: 100%;
+
 }
 
 .draggable  { 
