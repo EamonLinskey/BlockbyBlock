@@ -3,6 +3,10 @@ div#trash {height: 90px;
     width: 90px;
     background-color: #DEB887;}
 
+#logo {
+    list-style-type: none;
+}
+
 #containment-wrapper { 
     width: 95%; 
     height:500px; 

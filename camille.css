@@ -62,3 +62,7 @@ hr {
 .itemtable {
 	width: 100%;
 }
+
+#logo {
+    list-style-type: none;
+}
