@@ -1,14 +1,65 @@
-
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Block by Block</title>
-  <link rel="stylesheet" href="stylesheet.css">
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Block by Block</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/i18n/defaults-*.min.js"></script>
+    <link rel="stylesheet" href="camille.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+    <div class="padding">
+        <h3 class="alignLeft">Comedy of Errors</h3>
+        <table class="alignRight">
+            <tr>
+                <td>
+                    <h5 valign="middle">Annie Edison<br>Stage Manager</h5>
+                </td>
+                <td>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="images/Logo.png" align="left" alt="Block by Block logo" height="60px"></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="index.html">Logout</a></li>                       
+                        </ul>
+                    </li>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <br>
+    </div>
+    <div>
+        <ul class="nav nav-pills nav-justified nav-border">
+            <li><a href="blocking.html">Blocking</a></li>
+            <li><a href="todo.html">To Do</a></li>
+            <li><a href="notes.html">Notes</a></li>
+            <li><a href="props.html">Props</a></li>
+            <li><a href="lighting.html">Lighting</a></li>
+            <li><a href="sound.html">Sound</a></li>
+            <li><a href="set.html">Set</a></li>
+            <li class="active"><a href="costumes.html">Costumes</a></li>
+        </ul>
+    </div>
+    <br>
+
+
+
+<script>
+
+
 
   //This comes from the Jquery Api exapmle page. http://jqueryui.com/draggable/#constrain-movement 
   //Containment is where a draggable is restrained. helper: "clone" indicates that draggin it 
