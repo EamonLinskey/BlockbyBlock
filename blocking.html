@@ -104,7 +104,6 @@
 <body>
  
  
-<h3>Blocking</h3>
 <div class="column"> 
   <div id="script">
   <object id="scrip_text" data="A_comedy_of_errors.txt"></object>
@@ -112,9 +111,19 @@
 </div>
 
 <div class="column">
+<!-- Container holding the menu options -->
+<div id="containment-wrapper3">
+    <table id="topTable">
+        <tr id="topRow">
+            <td>Play</td>
+            <td>Save</td>
+            <td>Load</td>
+            <td>Clear</td> 
+        </tr>
+    </table>
+</div>
 <!-- Container holding the trash bin -->
 <div id="containment-wrapper">
-  <div id="trash"><img src="images/trash.png" alt="trash" class="trashbin"></div>
 </div>
 <!-- Container holding the icons -->
 <div id="containment-wrapper2">
@@ -130,11 +139,35 @@
     <img src="images/house2.png" alt="prop" class="icons">
     <input type="text" id="SetName" name="SetName" value="Set">
   </div>
+  <div id="trash" class="bottomRow">
+    <img src="images/trash.png" alt="trash" class="trashbin">
+  </div>
 </div>
 </div>
 
-
- 
+<div class="notesColumn">
+    <div id="containment-wrapper4">
+        General Notes:
+        <div>
+            <textarea name="generalNotes" rows="4" cols="21"></textarea>
+        </div>
+        <br>
+        Line Notes:
+        <div>
+            <textarea name="lineNotes" rows="4" cols="21"></textarea>
+        </div>
+        <br>
+        Lighting:
+        <div>
+            <textarea name="lightingNotes" rows="4" cols="21"></textarea>
+        </div>
+        <br>
+        Sound:
+        <div>
+            <textarea name="soundNotes" rows="4" cols="21"></textarea>
+        </div>
+    </div>
+</div>
  
 </body>
 
