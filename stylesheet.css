@@ -124,7 +124,7 @@ input[type=text] {
 }
 
 #script{
-    height:607px;
+    height:507px;
     width:95%;
     border:1px solid #ccc;
     font:16px/26px Georgia, Garamond, Serif;
@@ -134,4 +134,13 @@ input[type=text] {
 #scrip_text{
     height:607px;
     width:100%; 
+}
+
+#toDo {
+    width:95%;
+    height: 70px;
+    border:1px solid #ccc;
+    font-weight:900;
+    font-size: 16px;
+    padding: 10px;
 }
