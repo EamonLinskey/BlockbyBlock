@@ -45,20 +45,25 @@
     <br>
     <div class="padding">
         <ul class="nav nav-tabs">
-            <li class="active"><a data-toggle="tab" href="#todo">Todo</a></li>
-            <li><a data-toggle="tab" href="#done">Done</a></li>
+            <li class="active"><a data-toggle="tab" href="#todo">To Do</a></li>
+            <li><a data-toggle="tab" href="#done">Complete</a></li>
         </ul>
 
         <div class="tab-content">
             <div id="todo" class="tab-pane fade in active">
-                <h3>Todo</h3>
+                <h3>To Do</h3>
                 <form action="">
                     <input type="checkbox" name="vehicle" value="Bike"> &nbsp fix the blocking in act 2 scene 2<br>
                     <input type="checkbox" name="vehicle" value="Car">&nbsp change the dancing in act 3
                 </form>
+                <br>
+                <div>
+                    <textarea name="addToDoInput" rows="1" cols="45"></textarea>
+                    <button type="button" id="addToDo" margin="10">Add</button>
+                </div>
             </div>
             <div id="done" class="tab-pane fade">
-                <h3>Done</h3>
+                <h3>Complete</h3>
                 <ul>
                     <li>FIGURE OUT HOW TO ADD CHECK BOXES</li>
                     <li>add a logout button under "block by block"</li>
