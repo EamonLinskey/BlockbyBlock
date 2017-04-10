@@ -1,3 +1,6 @@
+.selected{
+    background-color: yellow;
+}
 
 div#trash {
     height: 65px;
@@ -11,7 +14,7 @@ div#trash {
 
 #containment-wrapper { 
     width: 100%; 
-    height:407px; 
+    height:502px; 
     border:2px solid brown;
     padding: 0px; 
     background-color: #DEB887;
@@ -37,7 +40,7 @@ div#trash {
 
 #containment-wrapper4 { 
     width: 100%; 
-    height:577px; 
+    height:572px; 
     border:2px 
     solid black; 
     padding: 15px; 
@@ -124,7 +127,7 @@ input[type=text] {
 }
 
 #script{
-    height:507px;
+    height:502px;
     width:95%;
     border:1px solid #ccc;
     font:16px/26px Georgia, Garamond, Serif;

@@ -9,6 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/i18n/defaults-*.min.js"></script>
     <link rel="stylesheet" href="camille.css">
+    <script src="props.js"></script>
 </head>
 <body>
     <div class="padding">
@@ -71,45 +72,12 @@
                             <div class="boxes">
                                 <h4>Need to Make</h4>
                                 <hr>
-                                <table class="itemtable">
-                                    <tr>
-                                        <td>Book</td>
-                                        <td align="right">
-                                            <label><input type="checkbox" value=""> Done</label>
-                                            <select class="selectpicker scenebox" data-header="Scenes" multiple>
-                                                <option>I.1</option>
-                                                <option>I.2</option>
-                                                <option>II.1</option>
-                                                <option>II.2</option>
-                                                <option>III.1</option>
-                                                <option>III.2</option>
-                                                <option>IV.1</option>
-                                                <option>IV.2</option>
-                                                <option>IV.3</option>
-                                                <option>IV.4</option>
-                                                <option>V.1</option>
-                                            </select>
-                                            <input class="form-control numberbox" type="number" value="1">
-                                        </td>
-                                    </tr>
+                                <table class="itemtable act1scene1props">
                                     <tr>
                                         <td>Sword</td>
+                                        <td align="center">Act 1, Scene 2</td>
                                         <td align="right">
-                                            <label><input type="checkbox" value=""> Done</label>
-                                            <select class="selectpicker scenebox" data-header="Scenes" multiple>
-                                                <option>I.1</option>
-                                                <option>I.2</option>
-                                                <option>II.1</option>
-                                                <option>II.2</option>
-                                                <option>III.1</option>
-                                                <option>III.2</option>
-                                                <option>IV.1</option>
-                                                <option>IV.2</option>
-                                                <option>IV.3</option>
-                                                <option>IV.4</option>
-                                                <option>V.1</option>
-                                            </select>
-                                            <input class="form-control numberbox" type="number" value="1">
+                                            <label><input id="check0" type="checkbox" value=""> Done</label>
                                         </td>
                                     </tr>
                                 </table>
@@ -122,60 +90,15 @@
                                 <table class="itemtable">
                                     <tr>
                                         <td>Dagger</td>
-                                        <td align="right">
-                                            <select class="selectpicker scenebox" data-header="Scenes" multiple>
-                                                <option>I.1</option>
-                                                <option>I.2</option>
-                                                <option>II.1</option>
-                                                <option>II.2</option>
-                                                <option>III.1</option>
-                                                <option>III.2</option>
-                                                <option>IV.1</option>
-                                                <option>IV.2</option>
-                                                <option>IV.3</option>
-                                                <option>IV.4</option>
-                                                <option>V.1</option>
-                                            </select>
-                                            <input class="form-control numberbox" type="number" value="1">
-                                        </td>
+                                        <td align="center">Act 1, Scene 2</td>
                                     </tr>
                                     <tr>
                                         <td>Cane</td>
-                                        <td align="right">
-                                            <select class="selectpicker scenebox" data-header="Scenes" multiple>
-                                                <option>I.1</option>
-                                                <option>I.2</option>
-                                                <option>II.1</option>
-                                                <option>II.2</option>
-                                                <option>III.1</option>
-                                                <option>III.2</option>
-                                                <option>IV.1</option>
-                                                <option>IV.2</option>
-                                                <option>IV.3</option>
-                                                <option>IV.4</option>
-                                                <option>V.1</option>
-                                            </select>
-                                            <input class="form-control numberbox" type="number" value="1">
-                                        </td>
+                                        <td align="center">Act 2, Scene 1</td>
                                     </tr>
                                     <tr>
                                         <td>Flask</td>
-                                        <td align="right">
-                                            <select class="selectpicker scenebox" data-header="Scenes" multiple>
-                                                <option>I.1</option>
-                                                <option>I.2</option>
-                                                <option>II.1</option>
-                                                <option>II.2</option>
-                                                <option>III.1</option>
-                                                <option>III.2</option>
-                                                <option>IV.1</option>
-                                                <option>IV.2</option>
-                                                <option>IV.3</option>
-                                                <option>IV.4</option>
-                                                <option>V.1</option>
-                                            </select>
-                                            <input class="form-control numberbox" type="number" value="1">
-                                        </td>
+                                        <td align="center">Act 2, Scene 1</td>
                                     </tr>
                                 </table>
                             </div>                        
@@ -190,28 +113,7 @@
                             <div class="boxes">
                                 <h4>Need to Make</h4>
                                 <hr>
-                                <table class="itemtable">
-                                    <tr>
-                                        <td>Book</td>
-                                        <td align="right">
-                                            <label><input type="checkbox" value=""> Done</label>
-                                            <select class="selectpicker scenebox" data-header="Scenes" multiple>
-                                                <option selected disabled hidden>Select scene(s)</option>
-                                                <option>I.1</option>
-                                                <option>I.2</option>
-                                                <option>II.1</option>
-                                                <option>II.2</option>
-                                                <option>III.1</option>
-                                                <option>III.2</option>
-                                                <option>IV.1</option>
-                                                <option>IV.2</option>
-                                                <option>IV.3</option>
-                                                <option>IV.4</option>
-                                                <option>V.1</option>
-                                            </select>
-                                            <input class="form-control numberbox" type="number" value="1">
-                                        </td>
-                                    </tr>
+                                <table class="itemtable act1scene1props">
                                 </table>
                             </div>
                         </div>
@@ -221,11 +123,7 @@
                                 <hr>
                                 <table class="itemtable">
                                 </table>
-                                <br>
-                                <textarea name="addPropInput" rows="1" cols="20"></textarea>
-                                <button type="button" id="addProp" margin="10">Add</button>
-                            </div>
-                                                   
+                            </div>                       
                         </div>
                     </div>
                 </div>
@@ -240,22 +138,9 @@
                                 <table class="itemtable">
                                     <tr>
                                         <td>Sword</td>
+                                        <td align="center">Act 1, Scene 2</td>
                                         <td align="right">
                                             <label><input type="checkbox" value=""> Done</label>
-                                            <select class="selectpicker scenebox" data-header="Scenes" multiple>
-                                                <option>I.1</option>
-                                                <option>I.2</option>
-                                                <option>II.1</option>
-                                                <option>II.2</option>
-                                                <option>III.1</option>
-                                                <option>III.2</option>
-                                                <option>IV.1</option>
-                                                <option>IV.2</option>
-                                                <option>IV.3</option>
-                                                <option>IV.4</option>
-                                                <option>V.1</option>
-                                            </select>
-                                            <input class="form-control numberbox" type="number" value="1">
                                         </td>
                                     </tr>
                                 </table>
@@ -268,22 +153,7 @@
                                 <table class="itemtable">
                                     <tr>
                                         <td>Dagger</td>
-                                        <td align="right">
-                                            <select class="selectpicker scenebox" data-header="Scenes" multiple>
-                                                <option>I.1</option>
-                                                <option>I.2</option>
-                                                <option>II.1</option>
-                                                <option>II.2</option>
-                                                <option>III.1</option>
-                                                <option>III.2</option>
-                                                <option>IV.1</option>
-                                                <option>IV.2</option>
-                                                <option>IV.3</option>
-                                                <option>IV.4</option>
-                                                <option>V.1</option>
-                                            </select>
-                                            <input class="form-control numberbox" type="number" value="1">
-                                        </td>
+                                        <td align="center">Act 1, Scene 2</td>
                                     </tr>
                                 </table>
                             </div>                        
@@ -309,41 +179,11 @@
                                 <table class="itemtable">
                                     <tr>
                                         <td>Cane</td>
-                                        <td align="right">
-                                            <select class="selectpicker scenebox" data-header="Scenes" multiple>
-                                                <option>I.1</option>
-                                                <option>I.2</option>
-                                                <option>II.1</option>
-                                                <option>II.2</option>
-                                                <option>III.1</option>
-                                                <option>III.2</option>
-                                                <option>IV.1</option>
-                                                <option>IV.2</option>
-                                                <option>IV.3</option>
-                                                <option>IV.4</option>
-                                                <option>V.1</option>
-                                            </select>
-                                            <input class="form-control numberbox" type="number" value="1">
-                                        </td>
+                                        <td align="center">Act 1, Scene 2</td>
                                     </tr>
                                     <tr>
                                         <td>Flask</td>
-                                        <td align="right">
-                                            <select class="selectpicker scenebox" data-header="Scenes" multiple>
-                                                <option>I.1</option>
-                                                <option>I.2</option>
-                                                <option>II.1</option>
-                                                <option>II.2</option>
-                                                <option>III.1</option>
-                                                <option>III.2</option>
-                                                <option>IV.1</option>
-                                                <option>IV.2</option>
-                                                <option>IV.3</option>
-                                                <option>IV.4</option>
-                                                <option>V.1</option>
-                                            </select>
-                                            <input class="form-control numberbox" type="number" value="1">
-                                        </td>
+                                        <td align="center">Act 1, Scene 2</td>
                                     </tr>
                                 </table>
                             </div>                        

@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="stylesheet.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="scripts.js"></script>
 </head>
 <body>
     <div class="padding">
@@ -57,49 +58,7 @@
 
 
 
-<script>
 
-
-
-  //This comes from the Jquery Api exapmle page. http://jqueryui.com/draggable/#constrain-movement 
-  //Containment is where a draggable is restrained. helper: "clone" indicates that draggin it 
-  //creates a copy rather than moving it. 
-  $( function() {
-    $( "#draggable1" ).draggable({ containment: "#containment-wrapper", scroll: false, helper: "clone" })
-    $( "#draggable2" ).draggable({ containment: "#containment-wrapper", scroll: false, helper: "clone"  })
-    $( "#draggable3" ).draggable({ containment: "#containment-wrapper", scroll: false, helper: "clone"  });
-        // This function lets us drop the icons in the containment area
-        $("#containment-wrapper").droppable({
-        drop: function (event, ui) {
-            var $canvas = $(this);
-            console.log($canvas)
-            //This lets only the clone be dropped in
-            if (!ui.draggable.hasClass('canvas-element')) {
-                var $canvasElement = ui.draggable.clone();
-                $canvasElement.addClass('canvas-element');
-                $canvasElement.draggable({
-                    containment: '#containment-wrapper'
-                });
-                $canvas.append($canvasElement);
-                // Sets the new postion in the DOM
-                $canvasElement.css({
-                    left: (ui.position.left),
-                    top: (ui.position.top),
-                    position: 'absolute'
-                });
-            }
-        }
-    });
-  } );
-  // This function lets us clear icons moved to the trash
-  $( function() {
-     $('#trash').droppable({
-        drop: function(event, ui) {
-            // This line makes it so we can only delete the clones
-            if (ui.draggable.hasClass('canvas-element'))
-            ui.draggable.remove();
-        }})});
-  </script>
 </head>
 <body>
  
@@ -113,9 +72,9 @@
     </div>
     <!-- Script area -->
     <div id="script">
-        <div id="line1"> AEGEON <br>
+        <div class="line selected" id="line1"> AEGEON <br>
                         Proceed, Solinus, to procure my fall And by the doom of death end woes and all.</div><br>
-        <div id="line2"> DUKE SOLINUS <br>
+        <div class="line" id="line2"> DUKE SOLINUS <br>
                         Merchant of Syracuse, plead no more;
                         I am not partial to infringe our laws:
                         The enmity and discord which of late
@@ -139,14 +98,14 @@
                         Thy substance, valued at the highest rate,
                         Cannot amount unto a hundred marks;
                         Therefore by law thou art condemned to die.  </div><br>
-        <div id="line3"> AEGEON <br>
+        <div class="line" id="line3"> AEGEON <br>
                         Yet this my comfort: when your words are done,
                         My woes end likewise with the evening sun.   </div><br>
-        <div id="line3">DUKE SOLINUS  <br>
+        <div class="line" id="line4">DUKE SOLINUS  <br>
                         Well, Syracusian, say in brief the cause
                         Why thou departed'st from thy native home
                         And for what cause thou camest to Ephesus. </div><br>
-        <div id="line4"> AEGEON <br>
+        <div class="line" id="line5"> AEGEON <br>
                         A heavier task could not have been imposed
                         Than I to speak my griefs unspeakable:
                         Yet, that the world may witness that my end
@@ -155,7 +114,7 @@
                         In Syracusa was I born, and wed
                         Unto a woman, happy but for me,
                         And by me, had not our hap been bad.</div>
-        <div id="line5"> With her I lived in joy; our wealth increased
+        <div class="line" id="line6"> With her I lived in joy; our wealth increased
                         By prosperous voyages I often made
                         To Epidamnum; till my factor's death
                         And the great care of goods at random left
@@ -165,7 +124,7 @@
                         The pleasing punishment that women bear,
                         Had made provision for her following me
                         And soon and safe arrived where I was. </div>
-        <div id="line6">There had she not been long, but she became
+        <div class="line" id="line7">There had she not been long, but she became
                         A joyful mother of two goodly sons;
                         And, which was strange, the one so like the other,
                         As could not be distinguish'd but by names.
@@ -178,7 +137,7 @@
                         Made daily motions for our home return:
                         Unwilling I agreed. Alas! too soon,
                         We came aboard. </div>
-        <div id="line7">A league from Epidamnum had we sail'd,
+        <div class="line" id="line8">A league from Epidamnum had we sail'd,
                         Before the always wind-obeying deep
                         Gave any tragic instance of our harm:
                         But longer did we not retain much hope;
@@ -191,7 +150,7 @@
                         And piteous plainings of the pretty babes,
                         That mourn'd for fashion, ignorant what to fear,
                         Forced me to seek delays for them and me.</div>
-        <div id="line8">And this it was, for other means was none:
+        <div class="line" id="line9">And this it was, for other means was none:
                         The sailors sought for safety by our boat,
                         And left the ship, then sinking-ripe, to us:
                         My wife, more careful for the latter-born,
@@ -199,19 +158,6 @@
                         Such as seafaring men provide for storms;
                         To him one of the other twins was bound,
                         Whilst I had been like heedful of the other:</div>
-        <div id="line9">The children thus disposed, my wife and I,
-                        Fixing our eyes on whom our care was fix'd,
-                        Fasten'd ourselves at either end the mast;
-                        And floating straight, obedient to the stream,
-                        Was carried towards Corinth, as we thought.
-                        At length the sun, gazing upon the earth,
-                        Dispersed those vapours that offended us;
-                        And by the benefit of his wished light,
-                        The seas wax'd calm, and we discovered
-                        Two ships from far making amain to us,
-                        Of Corinth that, of Epidaurus this:
-                        But ere they came,--O, let me say no more!
-                        Gather the sequel by that went before.</div>
 
 
     </div>
@@ -226,53 +172,57 @@
             <td>Play</td>
             <td>Save</td>
             <td>Load</td>
-            <td>Clear</td> 
+            <td onclick="clear_all()">Clear</td>
         </tr>
     </table>
 </div>
 <!-- Stage Container-->
 <div id="containment-wrapper">
-</div>
 <!-- Container holding the icons -->
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <div id="containment-wrapper2">
-  <div id="draggable1" class="draggable ui-widget-content">
+  <div class="draggable ui-widget-content prop">
     <img src="images/red_circle.png" alt="prop" class="icons">
-    <input type="text" id="PropName" name="PropName" value="Props">
+    <input type="text" name="PropName" value="Props">
   </div>
-  <div id="draggable2" class="draggable ui-widget-content">
+  <div class="draggable ui-widget-content actor">
     <img src="images/person.png" alt="actor" class="icons">
-    <input type="text" id="ActorName" name="ActorName" value="Actors" >
+    <input type="text" name="ActorName" value="Actors">
   </div>
-  <div id="draggable3" class="draggable ui-widget-content">
+  <div class="draggable ui-widget-content set">
     <img src="images/house2.png" alt="set" class="icons">
-    <input type="text" id="SetName" name="SetName" value="Set">
+    <input type="text" name="SetName" value="Set">
   </div>
   <div id="trash" class="bottomRow">
     <img src="images/trash.png" alt="trash" class="trashbin">
   </div>
 </div>
 </div>
+</div>
 <!-- Notes column -->
 <div class="notesColumn">
     <div id="containment-wrapper4">
+        <br>
+        <br>
+        <br>
+        
         General Notes:
         <div>
-            <textarea name="generalNotes" rows="4" cols="21"></textarea>
+            <textarea id="gen_notes" name="generalNotes" rows="4" cols="21"></textarea>
         </div>
         <br>
-        Line Notes:
+        <!-- Line Notes:
         <div>
             <textarea name="lineNotes" rows="4" cols="21"></textarea>
-        </div>
-        <br>
+        </div> -->
         Lighting:
         <div>
-            <textarea name="lightingNotes" rows="4" cols="21"></textarea>
+            <textarea id="light_notes" name="lightingNotes" rows="4" cols="21"></textarea>
         </div>
         <br>
         Sound:
         <div>
-            <textarea name="soundNotes" rows="4" cols="21"></textarea>
+            <textarea id="sound_notes" name="soundNotes" rows="4" cols="21"></textarea>
         </div>
     </div>
 </div>
