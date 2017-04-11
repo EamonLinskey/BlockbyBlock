@@ -9,6 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/i18n/defaults-*.min.js"></script>
     <link rel="stylesheet" href="camille.css">
+    <script src="costumes.js"></script>
 </head>
 <body>
     <div class="padding">
@@ -69,145 +70,22 @@
                     <div class="row">
                         <div class="col-xs-6">
                             <div class="boxes">
-                                <h4>Need to Make</h4>
+                                <input id="addcostumetext1" type="text" placeholder="Add Costume">
+                                <button id="addcostume1">Add</button>
                                 <hr>
-                                <table class="itemtable">
+                                <table class="itemtable act1scene1costumes">
                                     <tr>
                                         <td>Dromio of Syracuse suit</td>
+                                        <td align="center">Act 1, Scene 2</td>
                                         <td align="right">
-                                            <label><input type="checkbox" value=""> Done</label>
-                                            <select class="selectpicker scenebox" data-header="Scenes" multiple>
-                                                <option>I.1</option>
-                                                <option>I.2</option>
-                                                <option>II.1</option>
-                                                <option>II.2</option>
-                                                <option>III.1</option>
-                                                <option>III.2</option>
-                                                <option>IV.1</option>
-                                                <option>IV.2</option>
-                                                <option>IV.3</option>
-                                                <option>IV.4</option>
-                                                <option>V.1</option>
-                                            </select>
-                                            <input class="form-control numberbox" type="number" value="1">
+                                            <label><input id="check0" type="checkbox" value=""> Done</label>
                                         </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Balthazar funny hat</td>
                                         <td align="right">
-                                            <label><input type="checkbox" value=""> Done</label>
-                                            <select class="selectpicker scenebox" data-header="Scenes" multiple>
-                                                <option>I.1</option>
-                                                <option>I.2</option>
-                                                <option>II.1</option>
-                                                <option>II.2</option>
-                                                <option>III.1</option>
-                                                <option>III.2</option>
-                                                <option>IV.1</option>
-                                                <option>IV.2</option>
-                                                <option>IV.3</option>
-                                                <option>IV.4</option>
-                                                <option>V.1</option>
-                                            </select>
-                                            <input class="form-control numberbox" type="number" value="1">
+                                            <button>Delete</button>
                                         </td>
                                     </tr>
                                 </table>
                             </div>
-                            <br>
-                            <div class= "boxes">
-                                <table>
-                                    <tr>
-                                        <td><textarea name="addPropInput" rows="1" cols="20"></textarea></td>
-                                        <td>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                            <label><input type="checkbox" value=""> Done</label>
-                                            <select class="selectpicker scenebox" data-header="Scenes" multiple>
-                                                <option>I.1</option>
-                                                <option>I.2</option>
-                                                <option>II.1</option>
-                                                <option>II.2</option>
-                                                <option>III.1</option>
-                                                <option>III.2</option>
-                                                <option>IV.1</option>
-                                                <option>IV.2</option>
-                                                <option>IV.3</option>
-                                                <option>IV.4</option>
-                                                <option>V.1</option>
-                                            </select>
-                                            <input class="form-control numberbox" type="number" value="1">
-                                        </td>
-                                    </tr>
-                                </table>
-                                <br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <button type="button" id="addCostume">Add</button>
-                            </div>
-                        </div>
-                        <div class="col-xs-6">
-                            <div class="boxes">
-                                <h4>Ready</h4>
-                                <hr>
-                                <table class="itemtable">
-                                    <tr>
-                                        <td>Luciana ballgown</td>
-                                        <td align="right">
-                                            <select class="selectpicker scenebox" data-header="Scenes" multiple>
-                                                <option>I.1</option>
-                                                <option>I.2</option>
-                                                <option>II.1</option>
-                                                <option>II.2</option>
-                                                <option>III.1</option>
-                                                <option>III.2</option>
-                                                <option>IV.1</option>
-                                                <option>IV.2</option>
-                                                <option>IV.3</option>
-                                                <option>IV.4</option>
-                                                <option>V.1</option>
-                                            </select>
-                                            <input class="form-control numberbox" type="number" value="1">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Adriana peasant dress</td>
-                                        <td align="right">
-                                            <select class="selectpicker scenebox" data-header="Scenes" multiple>
-                                                <option>I.1</option>
-                                                <option>I.2</option>
-                                                <option>II.1</option>
-                                                <option>II.2</option>
-                                                <option>III.1</option>
-                                                <option>III.2</option>
-                                                <option>IV.1</option>
-                                                <option>IV.2</option>
-                                                <option>IV.3</option>
-                                                <option>IV.4</option>
-                                                <option>V.1</option>
-                                            </select>
-                                            <input class="form-control numberbox" type="number" value="1">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Antipholus of Syracuse jester hat</td>
-                                        <td align="right">
-                                            <select class="selectpicker scenebox" data-header="Scenes" multiple>
-                                                <option>I.1</option>
-                                                <option>I.2</option>
-                                                <option>II.1</option>
-                                                <option>II.2</option>
-                                                <option>III.1</option>
-                                                <option>III.2</option>
-                                                <option>IV.1</option>
-                                                <option>IV.2</option>
-                                                <option>IV.3</option>
-                                                <option>IV.4</option>
-                                                <option>V.1</option>
-                                            </select>
-                                            <input class="form-control numberbox" type="number" value="1">
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>                        
                         </div>
                     </div>
                 </div>
@@ -217,68 +95,10 @@
                     <div class="row">
                         <div class="col-xs-6">
                             <div class="boxes">
-                                <h4>Need to Make</h4>
                                 <hr>
-                                <table class="itemtable">
-                                    <tr>
-                                        <td>Dromio of Syracuse suit</td>
-                                        <td align="right">
-                                            <label><input type="checkbox" value=""> Done</label>
-                                            <select class="selectpicker scenebox" data-header="Scenes" multiple>
-                                                <option>I.1</option>
-                                                <option>I.2</option>
-                                                <option>II.1</option>
-                                                <option>II.2</option>
-                                                <option>III.1</option>
-                                                <option>III.2</option>
-                                                <option>IV.1</option>
-                                                <option>IV.2</option>
-                                                <option>IV.3</option>
-                                                <option>IV.4</option>
-                                                <option>V.1</option>
-                                            </select>
-                                            <input class="form-control numberbox" type="number" value="1">
-                                        </td>
-                                    </tr>
+                                <table class="itemtable act1scene1costumes">
                                 </table>
                             </div>
-                            <br>
-                            <div class= "boxes">
-                                <table>
-                                    <tr>
-                                        <td><textarea name="addPropInput" rows="1" cols="20"></textarea></td>
-                                        <td>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                            <label><input type="checkbox" value=""> Done</label>
-                                            <select class="selectpicker scenebox" data-header="Scenes" multiple>
-                                                <option>I.1</option>
-                                                <option>I.2</option>
-                                                <option>II.1</option>
-                                                <option>II.2</option>
-                                                <option>III.1</option>
-                                                <option>III.2</option>
-                                                <option>IV.1</option>
-                                                <option>IV.2</option>
-                                                <option>IV.3</option>
-                                                <option>IV.4</option>
-                                                <option>V.1</option>
-                                            </select>
-                                            <input class="form-control numberbox" type="number" value="1">
-                                        </td>
-                                    </tr>
-                                </table>
-                                <br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <button type="button" id="addCostume">Add</button>
-                            </div>
-                        </div>
-                        <div class="col-xs-6">
-                            <div class="boxes">
-                                <h4>Ready</h4>
-                                <hr>
-                                <table class="itemtable">
-                                </table>
-                            </div>                        
                         </div>
                     </div>
                 </div>
@@ -288,87 +108,17 @@
                     <div class="row">
                         <div class="col-xs-6">
                             <div class="boxes">
-                                <h4>Need to Make</h4>
                                 <hr>
                                 <table class="itemtable">
                                     <tr>
-                                        <td>Balthazar funny hat</td>
+                                        <td>Dromio of Syracuse suit</td>
+                                        <td align="center">Act 1, Scene 2</td>
                                         <td align="right">
                                             <label><input type="checkbox" value=""> Done</label>
-                                            <select class="selectpicker scenebox" data-header="Scenes" multiple>
-                                                <option>I.1</option>
-                                                <option>I.2</option>
-                                                <option>II.1</option>
-                                                <option>II.2</option>
-                                                <option>III.1</option>
-                                                <option>III.2</option>
-                                                <option>IV.1</option>
-                                                <option>IV.2</option>
-                                                <option>IV.3</option>
-                                                <option>IV.4</option>
-                                                <option>V.1</option>
-                                            </select>
-                                            <input class="form-control numberbox" type="number" value="1">
                                         </td>
                                     </tr>
                                 </table>
                             </div>
-                            <br>
-                            <div class= "boxes">
-                                <table>
-                                    <tr>
-                                        <td><textarea name="addPropInput" rows="1" cols="20"></textarea></td>
-                                        <td>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                            <label><input type="checkbox" value=""> Done</label>
-                                            <select class="selectpicker scenebox" data-header="Scenes" multiple>
-                                                <option>I.1</option>
-                                                <option>I.2</option>
-                                                <option>II.1</option>
-                                                <option>II.2</option>
-                                                <option>III.1</option>
-                                                <option>III.2</option>
-                                                <option>IV.1</option>
-                                                <option>IV.2</option>
-                                                <option>IV.3</option>
-                                                <option>IV.4</option>
-                                                <option>V.1</option>
-                                            </select>
-                                            <input class="form-control numberbox" type="number" value="1">
-                                        </td>
-                                    </tr>
-                                </table>
-                                <br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <button type="button" id="addCostume">Add</button>
-                            </div>
-                        </div>
-                        <div class="col-xs-6">
-                            <div class="boxes">
-                                <h4>Ready</h4>
-                                <hr>
-                                <table class="itemtable">
-                                    <tr>
-                                        <td>Luciana ballgown</td>
-                                        <td align="right">
-                                            <select class="selectpicker scenebox" data-header="Scenes" multiple>
-                                                <option>I.1</option>
-                                                <option>I.2</option>
-                                                <option>II.1</option>
-                                                <option>II.2</option>
-                                                <option>III.1</option>
-                                                <option>III.2</option>
-                                                <option>IV.1</option>
-                                                <option>IV.2</option>
-                                                <option>IV.3</option>
-                                                <option>IV.4</option>
-                                                <option>V.1</option>
-                                            </select>
-                                            <input class="form-control numberbox" type="number" value="1">
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>                        
                         </div>
                     </div>
                 </div>
@@ -378,86 +128,10 @@
                     <div class="row">
                         <div class="col-xs-6">
                             <div class="boxes">
-                                <h4>Need to Make</h4>
                                 <hr>
                                 <table class="itemtable">
                                 </table>
                             </div>
-                            <br>
-                            <div class= "boxes">
-                                <table>
-                                    <tr>
-                                        <td><textarea name="addPropInput" rows="1" cols="20"></textarea></td>
-                                        <td>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                            <label><input type="checkbox" value=""> Done</label>
-                                            <select class="selectpicker scenebox" data-header="Scenes" multiple>
-                                                <option>I.1</option>
-                                                <option>I.2</option>
-                                                <option>II.1</option>
-                                                <option>II.2</option>
-                                                <option>III.1</option>
-                                                <option>III.2</option>
-                                                <option>IV.1</option>
-                                                <option>IV.2</option>
-                                                <option>IV.3</option>
-                                                <option>IV.4</option>
-                                                <option>V.1</option>
-                                            </select>
-                                            <input class="form-control numberbox" type="number" value="1">
-                                        </td>
-                                    </tr>
-                                </table>
-                                <br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <button type="button" id="addCostume">Add</button>
-                            </div>
-                        </div>
-                        <div class="col-xs-6">
-                            <div class="boxes">
-                                <h4>Ready</h4>
-                                <hr>
-                                <table class="itemtable">
-                                    <tr>
-                                        <td>Adriana peasant dress</td>
-                                        <td align="right">
-                                            <select class="selectpicker scenebox" data-header="Scenes" multiple>
-                                                <option>I.1</option>
-                                                <option>I.2</option>
-                                                <option>II.1</option>
-                                                <option>II.2</option>
-                                                <option>III.1</option>
-                                                <option>III.2</option>
-                                                <option>IV.1</option>
-                                                <option>IV.2</option>
-                                                <option>IV.3</option>
-                                                <option>IV.4</option>
-                                                <option>V.1</option>
-                                            </select>
-                                            <input class="form-control numberbox" type="number" value="1">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Antipholus of Syracuse jester hat</td>
-                                        <td align="right">
-                                            <select class="selectpicker scenebox" data-header="Scenes" multiple>
-                                                <option>I.1</option>
-                                                <option>I.2</option>
-                                                <option>II.1</option>
-                                                <option>II.2</option>
-                                                <option>III.1</option>
-                                                <option>III.2</option>
-                                                <option>IV.1</option>
-                                                <option>IV.2</option>
-                                                <option>IV.3</option>
-                                                <option>IV.4</option>
-                                                <option>V.1</option>
-                                            </select>
-                                            <input class="form-control numberbox" type="number" value="1">
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>                        
                         </div>
                     </div>
                 </div>
@@ -467,48 +141,10 @@
                     <div class="row">
                         <div class="col-xs-6">
                             <div class="boxes">
-                                <h4>Need to Make</h4>
                                 <hr>
                                 <table class="itemtable">
                                 </table>
                             </div>
-                            <br>
-                            <div class= "boxes">
-                                <table>
-                                    <tr>
-                                        <td><textarea name="addPropInput" rows="1" cols="20"></textarea></td>
-                                        <td>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                            <label><input type="checkbox" value=""> Done</label>
-                                            <select class="selectpicker scenebox" data-header="Scenes" multiple>
-                                                <option>I.1</option>
-                                                <option>I.2</option>
-                                                <option>II.1</option>
-                                                <option>II.2</option>
-                                                <option>III.1</option>
-                                                <option>III.2</option>
-                                                <option>IV.1</option>
-                                                <option>IV.2</option>
-                                                <option>IV.3</option>
-                                                <option>IV.4</option>
-                                                <option>V.1</option>
-                                            </select>
-                                            <input class="form-control numberbox" type="number" value="1">
-                                        </td>
-                                    </tr>
-                                </table>
-                                <br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <button type="button" id="addCostume">Add</button>
-                            </div>
-                        </div>
-                        <div class="col-xs-6">
-                            <div class="boxes">
-                                <h4>Ready</h4>
-                                <hr>
-                                <table class="itemtable">
-                                </table>
-                            </div>                        
                         </div>
                     </div>
                 </div>
@@ -518,48 +154,10 @@
                     <div class="row">
                         <div class="col-xs-6">
                             <div class="boxes">
-                                <h4>Need to Make</h4>
                                 <hr>
                                 <table class="itemtable">
                                 </table>
                             </div>
-                            <br>
-                            <div class= "boxes">
-                                <table>
-                                    <tr>
-                                        <td><textarea name="addPropInput" rows="1" cols="20"></textarea></td>
-                                        <td>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                            <label><input type="checkbox" value=""> Done</label>
-                                            <select class="selectpicker scenebox" data-header="Scenes" multiple>
-                                                <option>I.1</option>
-                                                <option>I.2</option>
-                                                <option>II.1</option>
-                                                <option>II.2</option>
-                                                <option>III.1</option>
-                                                <option>III.2</option>
-                                                <option>IV.1</option>
-                                                <option>IV.2</option>
-                                                <option>IV.3</option>
-                                                <option>IV.4</option>
-                                                <option>V.1</option>
-                                            </select>
-                                            <input class="form-control numberbox" type="number" value="1">
-                                        </td>
-                                    </tr>
-                                </table>
-                                <br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <button type="button" id="addCostume">Add</button>
-                            </div>
-                        </div>
-                        <div class="col-xs-6">
-                            <div class="boxes">
-                                <h4>Ready</h4>
-                                <hr>
-                                <table class="itemtable">
-                                </table>
-                            </div>                        
                         </div>
                     </div>
                 </div>
@@ -569,48 +167,10 @@
                     <div class="row">
                         <div class="col-xs-6">
                             <div class="boxes">
-                                <h4>Need to Make</h4>
                                 <hr>
                                 <table class="itemtable">
                                 </table>
                             </div>
-                            <br>
-                            <div class= "boxes">
-                                <table>
-                                    <tr>
-                                        <td><textarea name="addPropInput" rows="1" cols="20"></textarea></td>
-                                        <td>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                            <label><input type="checkbox" value=""> Done</label>
-                                            <select class="selectpicker scenebox" data-header="Scenes" multiple>
-                                                <option>I.1</option>
-                                                <option>I.2</option>
-                                                <option>II.1</option>
-                                                <option>II.2</option>
-                                                <option>III.1</option>
-                                                <option>III.2</option>
-                                                <option>IV.1</option>
-                                                <option>IV.2</option>
-                                                <option>IV.3</option>
-                                                <option>IV.4</option>
-                                                <option>V.1</option>
-                                            </select>
-                                            <input class="form-control numberbox" type="number" value="1">
-                                        </td>
-                                    </tr>
-                                </table>
-                                <br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <button type="button" id="addCostume">Add</button>
-                            </div>
-                        </div>
-                        <div class="col-xs-6">
-                            <div class="boxes">
-                                <h4>Ready</h4>
-                                <hr>
-                                <table class="itemtable">
-                                </table>
-                            </div>                        
                         </div>
                     </div>
                 </div>
@@ -620,48 +180,10 @@
                     <div class="row">
                         <div class="col-xs-6">
                             <div class="boxes">
-                                <h4>Need to Make</h4>
                                 <hr>
                                 <table class="itemtable">
                                 </table>
                             </div>
-                            <br>
-                            <div class= "boxes">
-                                <table>
-                                    <tr>
-                                        <td><textarea name="addPropInput" rows="1" cols="20"></textarea></td>
-                                        <td>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                            <label><input type="checkbox" value=""> Done</label>
-                                            <select class="selectpicker scenebox" data-header="Scenes" multiple>
-                                                <option>I.1</option>
-                                                <option>I.2</option>
-                                                <option>II.1</option>
-                                                <option>II.2</option>
-                                                <option>III.1</option>
-                                                <option>III.2</option>
-                                                <option>IV.1</option>
-                                                <option>IV.2</option>
-                                                <option>IV.3</option>
-                                                <option>IV.4</option>
-                                                <option>V.1</option>
-                                            </select>
-                                            <input class="form-control numberbox" type="number" value="1">
-                                        </td>
-                                    </tr>
-                                </table>
-                                <br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <button type="button" id="addCostume">Add</button>
-                            </div>
-                        </div>
-                        <div class="col-xs-6">
-                            <div class="boxes">
-                                <h4>Ready</h4>
-                                <hr>
-                                <table class="itemtable">
-                                </table>
-                            </div>                        
                         </div>
                     </div>
                 </div>
@@ -671,48 +193,10 @@
                     <div class="row">
                         <div class="col-xs-6">
                             <div class="boxes">
-                                <h4>Need to Make</h4>
                                 <hr>
                                 <table class="itemtable">
                                 </table>
                             </div>
-                            <br>
-                            <div class= "boxes">
-                                <table>
-                                    <tr>
-                                        <td><textarea name="addPropInput" rows="1" cols="20"></textarea></td>
-                                        <td>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                            <label><input type="checkbox" value=""> Done</label>
-                                            <select class="selectpicker scenebox" data-header="Scenes" multiple>
-                                                <option>I.1</option>
-                                                <option>I.2</option>
-                                                <option>II.1</option>
-                                                <option>II.2</option>
-                                                <option>III.1</option>
-                                                <option>III.2</option>
-                                                <option>IV.1</option>
-                                                <option>IV.2</option>
-                                                <option>IV.3</option>
-                                                <option>IV.4</option>
-                                                <option>V.1</option>
-                                            </select>
-                                            <input class="form-control numberbox" type="number" value="1">
-                                        </td>
-                                    </tr>
-                                </table>
-                                <br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <button type="button" id="addCostume">Add</button>
-                            </div>
-                        </div>
-                        <div class="col-xs-6">
-                            <div class="boxes">
-                                <h4>Ready</h4>
-                                <hr>
-                                <table class="itemtable">
-                                </table>
-                            </div>                        
                         </div>
                     </div>
                 </div>
@@ -722,48 +206,10 @@
                     <div class="row">
                         <div class="col-xs-6">
                             <div class="boxes">
-                                <h4>Need to Make</h4>
                                 <hr>
                                 <table class="itemtable">
                                 </table>
                             </div>
-                            <br>
-                            <div class= "boxes">
-                                <table>
-                                    <tr>
-                                        <td><textarea name="addPropInput" rows="1" cols="20"></textarea></td>
-                                        <td>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                            <label><input type="checkbox" value=""> Done</label>
-                                            <select class="selectpicker scenebox" data-header="Scenes" multiple>
-                                                <option>I.1</option>
-                                                <option>I.2</option>
-                                                <option>II.1</option>
-                                                <option>II.2</option>
-                                                <option>III.1</option>
-                                                <option>III.2</option>
-                                                <option>IV.1</option>
-                                                <option>IV.2</option>
-                                                <option>IV.3</option>
-                                                <option>IV.4</option>
-                                                <option>V.1</option>
-                                            </select>
-                                            <input class="form-control numberbox" type="number" value="1">
-                                        </td>
-                                    </tr>
-                                </table>
-                                <br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <button type="button" id="addCostume">Add</button>
-                            </div>
-                        </div>
-                        <div class="col-xs-6">
-                            <div class="boxes">
-                                <h4>Ready</h4>
-                                <hr>
-                                <table class="itemtable">
-                                </table>
-                            </div>                        
                         </div>
                     </div>
                 </div>
@@ -773,48 +219,10 @@
                     <div class="row">
                         <div class="col-xs-6">
                             <div class="boxes">
-                                <h4>Need to Make</h4>
                                 <hr>
                                 <table class="itemtable">
                                 </table>
                             </div>
-                            <br>
-                            <div class= "boxes">
-                                <table>
-                                    <tr>
-                                        <td><textarea name="addPropInput" rows="1" cols="20"></textarea></td>
-                                        <td>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                            <label><input type="checkbox" value=""> Done</label>
-                                            <select class="selectpicker scenebox" data-header="Scenes" multiple>
-                                                <option>I.1</option>
-                                                <option>I.2</option>
-                                                <option>II.1</option>
-                                                <option>II.2</option>
-                                                <option>III.1</option>
-                                                <option>III.2</option>
-                                                <option>IV.1</option>
-                                                <option>IV.2</option>
-                                                <option>IV.3</option>
-                                                <option>IV.4</option>
-                                                <option>V.1</option>
-                                            </select>
-                                            <input class="form-control numberbox" type="number" value="1">
-                                        </td>
-                                    </tr>
-                                </table>
-                                <br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <button type="button" id="addCostume">Add</button>
-                            </div>
-                        </div>
-                        <div class="col-xs-6">
-                            <div class="boxes">
-                                <h4>Ready</h4>
-                                <hr>
-                                <table class="itemtable">
-                                </table>
-                            </div>                        
                         </div>
                     </div>
                 </div>
@@ -824,48 +232,10 @@
                     <div class="row">
                         <div class="col-xs-6">
                             <div class="boxes">
-                                <h4>Need to Make</h4>
                                 <hr>
                                 <table class="itemtable">
                                 </table>
                             </div>
-                            <br>
-                            <div class= "boxes">
-                                <table>
-                                    <tr>
-                                        <td><textarea name="addPropInput" rows="1" cols="20"></textarea></td>
-                                        <td>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                            <label><input type="checkbox" value=""> Done</label>
-                                            <select class="selectpicker scenebox" data-header="Scenes" multiple>
-                                                <option>I.1</option>
-                                                <option>I.2</option>
-                                                <option>II.1</option>
-                                                <option>II.2</option>
-                                                <option>III.1</option>
-                                                <option>III.2</option>
-                                                <option>IV.1</option>
-                                                <option>IV.2</option>
-                                                <option>IV.3</option>
-                                                <option>IV.4</option>
-                                                <option>V.1</option>
-                                            </select>
-                                            <input class="form-control numberbox" type="number" value="1">
-                                        </td>
-                                    </tr>
-                                </table>
-                                <br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <button type="button" id="addCostume">Add</button>
-                            </div>
-                        </div>
-                        <div class="col-xs-6">
-                            <div class="boxes">
-                                <h4>Ready</h4>
-                                <hr>
-                                <table class="itemtable">
-                                </table>
-                            </div>                        
                         </div>
                     </div>
                 </div>
