@@ -1,8 +1,16 @@
+// JavaScript for lights.html page
+
+// variable for storing all lights
 var all_lights;
 
+// code to be executed when page loads
 $(document).ready(function() {
+	// check for light notes saved in local storage
 	if (localStorage && localStorage.getItem("lights")) {
+		// load light notes form local storage
     	all_lights = JSON.parse(localStorage.getItem("lights"));
+    	
+    	// add existing light notes to the page
     	for (var i in all_lights) {
     		$(".act1scene1lights").append("<tr><td class='pageRow'>I.1</td>" + 
     			"<td class='pageRow'>" + i + "</td><td class='pageRow'>" + all_lights[i] +  "</td></tr>");
