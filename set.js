@@ -26,9 +26,9 @@ $(document).ready(function() {
         for (var i in all_sets) {
             for (var j in all_sets[i]) {
                 counter++;
-                $(".act1scene1sets").append("<tr><td>" + all_sets[i][j][1] + "</td>" + 
-                    "<td align='center'>Act 1, Scene 1</td><td align='right'>" + 
-                    "<label><input class='" + checkids[counter] + "' class='checked' type='checkbox' value=''> Done</label></td></tr>");
+                $(".act1scene1sets").append("<tr><td>" + all_sets[i][j][1] + "</td>" +
+                    "<td align='center'>Act 1, Scene 1</td><td align='right'>" +
+                    "<input class='" + checkids[counter] + "' class='checked' type='checkbox' value=''></td></tr>");
             }
             
         }

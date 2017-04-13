@@ -1,4 +1,4 @@
-/* CSS used on home.html, lighting.html, and sound.html pages */
+/* CSS used on home.html, lighting.html, and sound.html pages -- NO LONGER NEEDED*/
 
 #logo {
   list-style-type: none;
@@ -40,17 +40,6 @@ body {
   	border-top: 1px solid;
 	border-bottom: 1px solid;
 	border-color: #A9A9A9;
-}
-
-.pageTable{
-	border: 1px solid #d3d3d3;
-	border-spacing: 4px;
-	border-collapse: separate;
-}
-
-.pageRow{
-	  border: 1px solid #d3d3d3;
-	  padding: 10px 15px;
 }
 
 .tab-content {

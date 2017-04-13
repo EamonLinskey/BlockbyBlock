@@ -26,9 +26,9 @@ $(document).ready(function() {
         for (var i in all_props) {
             for (var j in all_props[i]) {
                 counter++;
-                $(".act1scene1props").append("<tr><td>" + all_props[i][j][1] + "</td>" + 
-                    "<td align='center'>Act 1, Scene 1</td><td align='right'>" + 
-                    "<label><input class='" + checkids[counter] + "' class='checked' type='checkbox' value=''> Done</label></td></tr>");
+                $(".act1scene1props").append("<tr><td>" + all_props[i][j][1] + "</td>" +
+                    "<td align='center'>Act 1, Scene 1</td><td align='right'>" +
+                    "<input class='" + checkids[counter] + "' class='checked' type='checkbox' value=''></td></tr>");
             }
             
         }

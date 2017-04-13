@@ -104,9 +104,9 @@ $(document).ready(function() {
         counter++;
 
         // add the new costume to the table with all costumes
-        $(".act1scene1costumes").append("<tr><td>" + $("#addcostumetext1").val() + "</td>" + 
-            "<td align='center'>Act 1, Scene 1</td><td align='right'>" + 
-            "<label><input class='" + checkids[counter] + "' class='checked' type='checkbox' value=''> Done</label></td>" + 
+        $(".act1scene1costumes").append("<tr><td>" + $("#addcostumetext1").val() + "</td>" +
+            "<td align='center'>Act 1, Scene 1</td><td align='right'>" +
+            "<label><input class='" + checkids[counter] + "' class='checked' type='checkbox' value=''> Done</label></td>" +
             "<td align='right'><button>Delete</button></td></tr>");
         
         // load costumes to properly handle done checkbox
@@ -117,9 +117,9 @@ $(document).ready(function() {
     for (var i in all_costumes) {
         for (var j in all_costumes[i]) {
             counter++;
-            $(".act1scene1costumes").append("<tr><td>" + all_costumes[i][j] + "</td>" + 
-                "<td align='center'>Act 1, Scene 1</td><td align='right'>" + 
-                "<label><input class='" + checkids[counter] + "' class='checked' type='checkbox' value=''> Done</label></td>" + 
+            $(".act1scene1costumes").append("<tr><td>" + all_costumes[i][j] + "</td>" +
+                "<td align='center'>Act 1, Scene 1</td><td align='right'>" +
+                "<input class='" + checkids[counter] + "' class='checked' type='checkbox' value=''></td>" +
                 "<td align='right'><button>Delete</button></td></tr>");
         }
         

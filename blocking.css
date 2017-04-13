@@ -85,38 +85,38 @@ div#trash {
     list-style-type: none;
 }
 
-#containment-wrapper { 
-    width: 100%; 
-    height:502px; 
+#containment-wrapper {
+    width: 100%;
+    height:502px;
     border:2px solid brown;
-    padding: 0px; 
+    padding: 0px;
     background-color: #DEB887;
  }
 
-#containment-wrapper2 { 
- 	width: 100%; 
- 	height:100px; 
- 	border:2px 
- 	solid black; 
- 	padding: 0px; 
+#containment-wrapper2 {
+ 	width: 100%;
+ 	height:100px;
+ 	border:2px
+ 	solid black;
+ 	padding: 0px;
     background-color: #DEB887;
  }
 
- #containment-wrapper3 { 
-    width: 100%; 
-    height:70px; 
-    border:2px 
-    solid black; 
-    padding: 0px; 
+ #containment-wrapper3 {
+    width: 100%;
+    height:70px;
+    border:2px
+    solid black;
+    padding: 0px;
     background-color: #DEB887;
  }
 
-#containment-wrapper4 { 
-    width: 100%; 
-    height:572px; 
-    border:2px 
-    solid black; 
-    padding: 15px; 
+#containment-wrapper4 {
+    width: 100%;
+    height:572px;
+    border:2px
+    solid black;
+    padding: 15px;
     background-color: #DEB887;
     font-size: 16px;
  }
@@ -129,7 +129,7 @@ div#trash {
 }
 
 #topTable {
-    width: 95%; 
+    width: 95%;
     height: 70px;
     margin-left: auto;
     margin-right: auto;
@@ -142,8 +142,8 @@ div#trash {
 }
 
 .bottomRow {
-    padding: 7px; 
-    float: right; 
+    padding: 7px;
+    float: right;
     margin: 0 0px 0px 0;
 }
 
@@ -155,26 +155,27 @@ input[type=text] {
     border: none;
     background-color: rgba(222, 184, 135, 0);
     color: black;
-    position: relative; 
-    top: -60px; 
+    position: relative;
+    top: -60px;
     left: 8px;
-    width: 80%; 
+    width: 80%;
     max-width: 100%;
 
 }
 
-.draggable  { 
-    width: 90px; 
-    height: 90px; 
-    padding: 7px; 
+.draggable  {
+    width: 90px;
+    height: 90px;
+    padding: 7px;
     float: left; margin: 0 0px 0px 0;
 }
 
-#ui-droppable { 
+#ui-droppable {
     width: 90px;
     height: 90px;
-    padding: 0; 
-    float: left; margin: 0 0px 0px 0;
+    padding: 0;
+    float: left;
+    margin: 0 0px 0px 0;
 }
 
 .icons {
@@ -190,7 +191,7 @@ input[type=text] {
 .column{
     float:left;
     margin:0;
-    width:40%; 
+    width:40%;
 }
 
 .notesColumn{
@@ -210,14 +211,5 @@ input[type=text] {
 
 #scrip_text{
     height:607px;
-    width:100%; 
-}
-
-#toDo {
-    width:95%;
-    height: 70px;
-    border:1px solid #ccc;
-    font-weight:900;
-    font-size: 16px;
-    padding: 10px;
+    width:100%;
 }

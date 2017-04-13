@@ -12,8 +12,8 @@ $(document).ready(function() {
     	
     	// add existing light notes to the page
     	for (var i in all_lights) {
-    		$(".act1scene1lights").append("<tr><td class='pageRow'>I.1</td>" + 
-    			"<td class='pageRow'>" + i + "</td><td class='pageRow'>" + all_lights[i] +  "</td></tr>");
+    		$(".act1scene1lights").append("<tr><td width='150px'>I.1</td>" +
+    			"<td>" + i + "</td><td>" + all_lights[i] +  "</td></tr>");
     	}
   	}
 });
