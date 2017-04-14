@@ -12,7 +12,10 @@ $(document).ready(function() {
 
     	// add existing notes to the page
     	for (var i in all_notes) {
-    		$(".act1scene1text").append("<li>" + all_notes[i] +  "</li>");
+    		$(".act1scene1text").append("<tr><td class='tablespace'>" + 
+                "<a href='blocking.html'>Act 1, Scene 1</a></td>" +
+                "<td class='tablespace' align='left'>" + all_notes[i] + 
+                "</td><td align='center' class='tablespace'> </td></tr>");
     	}
   	}
 });

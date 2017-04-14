@@ -99,3 +99,13 @@ hr {
 .tablespace {
 	padding-top: 10px;
 }
+
+input[type='checkbox'] {
+	width: 30px;
+	height: 30px;
+}
+
+input[type='checkbox']:checked {
+	width: 30px;
+	height: 30px;
+}
