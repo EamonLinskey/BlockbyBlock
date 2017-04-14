@@ -137,7 +137,7 @@ div#trash {
 
 #topRow{
     font-weight: 900;
-    line-height: 70px;
+    line-height: 50px;
     font-size: 20px;
 }
 
@@ -212,4 +212,23 @@ input[type=text] {
 #scrip_text{
     height:607px;
     width:100%;
+}
+
+.button {
+    background-color: purple;
+    border: none;
+    color: white;
+    padding: 0px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 8px;
+    border: 2px solid purple;
+}
+
+.button:hover {
+    background-color: white;
+    color: purple;
+    border: 2px solid purple;
 }

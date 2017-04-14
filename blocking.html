@@ -161,9 +161,9 @@
 <div id="containment-wrapper3">
     <table id="topTable">
         <tr id="topRow">
-            <td>Save</td>
-            <td>Load</td>
-            <td onclick="clear_all()">Clear</td>
+            <td><button class="button">Save</button></td>
+            <td><button class="button">Load</button></td>
+            <td><button class="button" onclick="clear_all()">Clear</button></td>
         </tr>
     </table>
 </div>
@@ -193,27 +193,19 @@
 <!-- Notes column -->
 <div class="notesColumn">
     <div id="containment-wrapper4">
-        <br>
-        <br>
-        <br>
-        
         General Notes:
         <div>
-            <textarea id="gen_notes" name="generalNotes" rows="4" cols="21"></textarea>
+            <textarea id="gen_notes" name="generalNotes" rows="6" cols="21"></textarea>
         </div>
         <br>
-        <!-- Line Notes:
-        <div>
-            <textarea name="lineNotes" rows="4" cols="21"></textarea>
-        </div> -->
         Lighting:
         <div>
-            <textarea id="light_notes" name="lightingNotes" rows="4" cols="21"></textarea>
+            <textarea id="light_notes" name="lightingNotes" rows="6" cols="21"></textarea>
         </div>
         <br>
         Sound:
         <div>
-            <textarea id="sound_notes" name="soundNotes" rows="4" cols="21"></textarea>
+            <textarea id="sound_notes" name="soundNotes" rows="6" cols="21"></textarea>
         </div>
     </div>
 </div>
