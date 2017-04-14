@@ -12,8 +12,8 @@ $(document).ready(function() {
 
     	// add sound notes to the page
     	for (var i in all_sounds) {
-    		$(".act1scene1sound").append("<tr><td width='150px' align='left'>I.1</td>" +
-    			"<td width='100px' align='left'>" + i + "</td><td align='left'>" + all_sounds[i] +  "</td></tr>");
+    		$(".act1scene1sound").append("<tr><td class='tablespace' width='150px' align='left'>Act 1, Scene 1</td>" +
+                "<td width='100px' align='center' class='tablespace'><a href='blocking.html'>" + i + "</a></td><td class='tablespace' align='left'>" + all_sounds[i] +  "</td></tr>");
     	}
   	}
 });

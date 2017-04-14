@@ -27,7 +27,7 @@ $(document).ready(function() {
             for (var j in all_props[i]) {
                 counter++;
                 $(".act1scene1props").append("<tr><td>" + all_props[i][j][1] + "</td>" +
-                    "<td align='center'>Act 1, Scene 1</td><td align='right'>" +
+                    "<td align='center' class='tablespace'><a href='blocking.html'>Act 1, Scene 1</a></td><td align='right'>" +
                     "<input class='" + checkids[counter] + "' class='checked' type='checkbox' value=''></td></tr>");
             }
             

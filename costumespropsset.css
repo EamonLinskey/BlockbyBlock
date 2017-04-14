@@ -91,3 +91,11 @@ hr {
 	color:black;
 	width:100%;
 }
+
+.borderbottom {
+	border-bottom: solid 1px black;
+}
+
+.tablespace {
+	padding-top: 10px;
+}
