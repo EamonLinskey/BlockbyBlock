@@ -217,6 +217,8 @@ input[type=text] {
 }
 
 #script{
+    padding-left: 10px;
+    padding-right: 10px;
     height:572px;
     width:95%;
     border:1px solid #ccc;
