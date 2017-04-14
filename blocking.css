@@ -183,6 +183,22 @@ input[type=text] {
     height: 75px;
 }
 
+.set {
+    position: absolute;
+    left: 550px;
+}
+
+.prop {
+    position: absolute;
+    left: 670px;
+}
+
+.actor {
+    position: absolute;
+    left: 790px;
+}
+
+
 .trashbin {
     width: 75px;
     height: 75px;
@@ -201,7 +217,7 @@ input[type=text] {
 }
 
 #script{
-    height:502px;
+    height:572px;
     width:95%;
     border:1px solid #ccc;
     font:16px/26px Georgia, Garamond, Serif;
