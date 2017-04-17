@@ -31,6 +31,10 @@ var all_notes = {};
 var all_lights = {};
 var all_sounds = {};
 
+// Tempoery variables to store local storage information
+var all_lights_blocking;
+var all_sounds_blocking;
+
 // array of ids for all line numbers
 var line_nums = ["line1", "line2", "line3", "line4", "line5", "line6", "line7", "line8", "line9"];
 
@@ -59,8 +63,36 @@ function clear_all () {
     localStorage.setItem("sets", JSON.stringify(all_sets));
   }
 
+// function for adding sounds to local storage and tos script page
+function add_sounds () {
+    $( ".sound_icons" ).remove();
+    if (localStorage && localStorage.getItem("sound")) {
+      // load light notes form local storage
+      all_sounds_blocking = JSON.parse(localStorage.getItem("sound"));
+      for (var i in all_sounds_blocking) {
+        $("#"+i).append("<a href='sound.html'> <img class='sound_icons' src='images/sound.png'> </a>");
+}}}
+
+
+// function for adding lights to local storage and tos script page
+function add_lights () {
+   $( ".lighting_icons" ).remove();
+   if (localStorage && localStorage.getItem("lights")) {
+      // load light notes form local storage
+      all_lights_blocking = JSON.parse(localStorage.getItem("lights"));
+      for (var i in all_lights_blocking) {
+        $("#"+i).append("<a href='lighting.html'> <img class='lighting_icons' src='images/light.png'> </a>");
+      }
+    }
+  }
+
+
 // majority of code, that only runs after page is loaded
 $(document).ready(function() {
+
+  // Add sound and light icons into the script from locla storage
+  add_lights()
+  add_sounds()
 
   // load any notes, lights, sound, props, actors, and sets from local storage
   if (localStorage && localStorage.getItem("gennotes")) {
@@ -149,6 +181,8 @@ $(document).ready(function() {
     else {
       $("textarea#sound_notes").val("");
     }
+    
+    
 
     // if any props, sets, actors stored for selected line, add them to the canvas by creating divs for each
     if (all_props[selected_line] && all_sets[selected_line] && all_actors[selected_line])
@@ -170,6 +204,9 @@ $(document).ready(function() {
       }
     }
   });
+
+
+
 
   // all of the draggable blocking functionality
   $( function() {
@@ -285,6 +322,7 @@ $(document).ready(function() {
    });
 
   // update local storage whenever notes, lights, or sound text is edited for selected line
+  // loads sound and lights icons into script page
   $("textarea#gen_notes").change(function () {
     all_notes[selected_line] = $("textarea#gen_notes").val();
     localStorage.setItem("gennotes", JSON.stringify(all_notes));
@@ -293,10 +331,16 @@ $(document).ready(function() {
   $("textarea#light_notes").change(function () {
     all_lights[selected_line] = $("textarea#light_notes").val();
     localStorage.setItem("lights", JSON.stringify(all_lights));
+    add_lights()
   })
 
   $("textarea#sound_notes").change(function () {
     all_sounds[selected_line] = $("textarea#sound_notes").val();
     localStorage.setItem("sound", JSON.stringify(all_sounds));
+    add_sounds()
   })
 })
+
+
+
+

@@ -52,3 +52,10 @@ body {
     list-style-type: none;
 }
 
+#username_input {
+    width: 200px;
+}
+
+.form-group {
+    width: 200px;
+}

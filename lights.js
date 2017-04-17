@@ -9,7 +9,7 @@ $(document).ready(function() {
 	if (localStorage && localStorage.getItem("lights")) {
 		// load light notes form local storage
     	all_lights = JSON.parse(localStorage.getItem("lights"));
-    	
+    	console.log(all_lights)
     	// add existing light notes to the page
     	for (var i in all_lights) {
     		$(".act1scene1lights").append("<tr><td class='tablespace' width='150px' align='left'>Act 1, Scene 1</td>" +
