@@ -1,5 +1,11 @@
 /* CSS used on blocking.html page */
 
+.h3, h3 {
+    font-size: 24px;
+    font-weight: bolder;
+    color: #438496;
+}
+
 .alignLeft {
     float:left;
 }
@@ -19,8 +25,18 @@
     background-color: #ffffff;
 }
 
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color: #f7882f;
+}
+
+a {
+    color: #438496;
+    text-decoration: none;
+}
+
 body {
-    background-color: #e6e6e6;
+    background-color: #efefef;
     font-family: Lucida Sans Unicode;
 }
 
@@ -72,13 +88,14 @@ hr {
 }
 
 .selected{
-    background-color: yellow;
+    background-color: #f9a460;
+    width:100%;
 }
 
 div#trash {
     height: 65px;
     width: 90px;
-    background-color: #DEB887;
+    background-color: #438496;
 }
 
 #logo {
@@ -91,7 +108,7 @@ div#trash {
     border-left:2px solid black;
     border-bottom:2px solid black;
     padding: 0px;
-    background-color: #DEB887;
+    background-color: #f9a460;
  }
 
 #containment-wrapper2 {
@@ -100,7 +117,7 @@ div#trash {
  	border-top:2px
  	solid black;
  	padding: 0px;
-    background-color: #DEB887;
+    background-color: #438496;
  }
 
  #containment-wrapper3 {
@@ -110,7 +127,7 @@ div#trash {
     border-bottom:2px solid black;
     border-top:2px solid black;
     padding: 0px;
-    background-color: #DEB887;
+    background-color: #438496;
  }
 
 #containment-wrapper4 {
@@ -119,7 +136,7 @@ div#trash {
     border:2px
     solid black;
     padding: 15px;
-    background-color: #DEB887;
+    background-color: #438496;
     font-size: 16px;
  }
 
@@ -236,6 +253,7 @@ input[type=text] {
 #script{
     padding-left: 10px;
     padding-right: 10px;
+    padding-top: 10px;
     height:572px;
     width:95%;
     border:2px solid black;
@@ -250,7 +268,7 @@ input[type=text] {
 }
 
 .button {
-    background-color: purple;
+    background-color: #f7882f;
     border: none;
     color: white;
     padding: 0px 50px;
@@ -264,7 +282,7 @@ input[type=text] {
 
 .button:hover {
     background-color: white;
-    color: purple;
+    color: #f7882f;
     border: 2px solid black;
 }
 
