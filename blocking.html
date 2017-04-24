@@ -136,12 +136,30 @@
 
 
 <div class="column">
+<br>
 <!-- Container holding the menu options -->
 <div id="containment-wrapper3">
     <table id="topTable">
         <tr id="topRow">
-            <td><button class="button">Save</button></td>
-            <td><button class="button">Load</button></td>
+            <td>
+                <li id="logo" class="dropdown ">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><button class="button">Save for Later</button></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Set Only</a></li>
+                        <li><a href="#">All Blocking</a></li>                   
+                    </ul>
+                </li>
+            </td>
+            <td>
+                <li id="logo" class="dropdown ">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><button class="button">Load Saved</button></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">House and sword</a></li>
+                        <li><a href="#">Acts 1 and 3 start</a></li>
+                        <li><a href="#">Horse, carriage, Duke</a></li>                      
+                    </ul>
+                </li>
+            </td>
             <td><button class="button" onclick="clear_all()">Clear</button></td>
         </tr>
     </table>
@@ -170,6 +188,7 @@
 </div>
 </div>
 <!-- Notes column -->
+<br>
 <div class="notesColumn">
     <div id="containment-wrapper4">
         <center> General Notes: </center>

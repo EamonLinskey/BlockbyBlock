@@ -271,13 +271,16 @@ input[type=text] {
     background-color: #f7882f;
     border: none;
     color: white;
-    padding: 0px 50px;
+    vertical-align: middle;
     text-align: center;
+    padding-top: 0px;
     text-decoration: none;
     display: inline-block;
     font-size: 15px;
     border-radius: 8px;
     border: 2px solid black;
+    height: 50px;
+    width: 160px;
 }
 
 .button:hover {
@@ -285,6 +288,11 @@ input[type=text] {
     color: #f7882f;
     border: 2px solid black;
 }
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; // remove the gap so it doesn't close
+ }
 
 .sound_icons{
     width:20px;
