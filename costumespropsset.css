@@ -3,7 +3,7 @@
 .h3, h3 {
     font-size: 24px;
     font-weight: bolder;
-    color: #438496;
+    color: #bb49bb;
 }
 
 .alignLeft {
@@ -27,11 +27,11 @@
 
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
     color: #fff;
-    background-color: #f7882f;
+    background-color: #bb49bb;
 }
 
 a {
-    color: #438496;
+    color: #bb49bb;
     text-decoration: none;
 }
 
