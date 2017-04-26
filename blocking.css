@@ -188,7 +188,8 @@ input[type=text] {
     width: 90px;
     height: 90px;
     padding: 7px;
-    float: left; margin: 0 0px 0px 0;
+    float: left; 
+    margin: 0 0px 0px 0;
 }
 
 #ui-droppable {
@@ -206,17 +207,17 @@ input[type=text] {
 
 .set {
     position: absolute;
-    left: 580px;
+    left: 610px;
 }
 
 .prop {
     position: absolute;
-    left: 700px;
+    left: 730px;
 }
 
 .actor {
     position: absolute;
-    left: 820px;
+    left: 850px;
 }
 
 
